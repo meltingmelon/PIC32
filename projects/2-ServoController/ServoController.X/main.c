@@ -2,9 +2,9 @@
  * File:   main.c
  * Author: Mel Ho
  *
- * This program controls an RC servo using either an ultrasonic sensor or the ASD5047D rotary encoder.
- * The PIC32 microcontroller 
- * Created on February 8, 2021, 10:54 AM
+ * This program controls the poisiton of an RC servo using either a ping sensor or a rotary encoder. On start up the program defaults into ENCODER control mode. Using
+ * the python lab interface, the user can change control mode to either the ping sensor or encoder. The position of the servo is then determined by the distance either
+ * measured using the proximity sensor or the absolute angle of the rotary encoder.
  */
 
 /*******************************************************************************
