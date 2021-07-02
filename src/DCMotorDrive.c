@@ -2,7 +2,7 @@
  * File:   DCMotorDrive.c
  * Author: Mel Ho
  * Brief: This library provides functions to set and get the motorspeed of an RC Servo
- * motor using the output control (OC) register. Please see PIC32 FRM Sect. 16 for more information
+ * motor using the output compare (OC) register. Please see PIC32 FRM Sect. 16 for more information
  * about the OC registers.
  */
 
