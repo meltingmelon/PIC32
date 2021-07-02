@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/m/Dropbox/School/ECE_121_Intro_to_Microcontrollers/ECE121/LabInterface/ece121/guiWidgets/protocolMonitor.py", line 63, in updateIncomingPackets
+    def updateIncomingPackets(self, inStr):
+KeyboardInterrupt

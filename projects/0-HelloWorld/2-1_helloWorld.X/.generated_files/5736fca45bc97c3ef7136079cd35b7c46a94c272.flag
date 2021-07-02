@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../include" -I"../../../src" -Wall   -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  /home/m/Dropbox/School/ECE_121_Intro_to_Microcontrollers/mecho/projects/Lab0/2-1_helloWorld.X/helloworld.c
