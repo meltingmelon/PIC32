@@ -1,4 +1,10 @@
-
+/* 
+ * File:   RCServo.h
+ * Author: Mel Ho
+ * Brief: A library for the SG90 Micro RC servo. The RC servo is controlled using the OC3 registers of the PIC32.
+ * See The PIC32 FRM Sect. 16 Output Compare for more information. Using timer 3 the OC3 pin is set to high every 50ms
+ * and pulses continuously. The pulse width determines the position of the servo with it defaulting at the center on intialization.
+ */
 
 #ifndef RCSERVO_H
 #define	RCSERVO_H
