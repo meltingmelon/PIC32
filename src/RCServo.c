@@ -1,9 +1,9 @@
 /* 
  * File:   RCServo.c
  * Author: Mel Ho
- * Brief: 
- * Created on <month> <day>, <year>, <hour> <pm/am>
- * Modified on <month> <day>, <year>, <hour> <pm/am>
+ * Brief: A library for the SG90 Micro RC servo. The RC servo is controlled using the OC3 registers of the PIC32.
+ * See The PIC32 FRM Sect. 16 Output Compare for more information. Using timer 3 the OC3 pin is set to high every 50ms
+ * and pulses continuously. The pulse width determines the position of the servo with it defaulting at the center on intialization.
  */
 
 /*******************************************************************************
@@ -130,6 +130,14 @@ unsigned int RCServo_GetRawTicks(void)
     return (TIMER_3_PULSE / (MS_PERIOD * (prevPulse * .001)));
 }
 
+/*******************************************************************************
+ * INTERRUPTS                                                                  *
+ ******************************************************************************/
+/**
+ * @Interrupt OC3Interruft(void)
+ * @param None
+ * @return None
+ * @brief When interrupt is triggered, OC3 pin is driven low*/
 void __ISR(_OUTPUT_COMPARE_3_VECTOR) __OC3Interrupt(void)
 {
     IFS0bits.OC3IF = 0;
