@@ -4,7 +4,6 @@
  * Brief:  Functions for the AS5047D Rotary Encoder. This library was specifically designed for both controlling a system using a rotary encoder, and 
  * using the rotary encoder as sensor for an angle compensation control loop with a DC motor. The SPI protocol was used for communication.
  * Please refer to the spec sheet: https://ams.com/AS5047D for more information on the communication protocol used with this unit.
- * Created on February 1, 2021, 10:06 PM
  */
 
 /*******************************************************************************
